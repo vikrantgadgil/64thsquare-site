@@ -53,6 +53,11 @@ export default function ContactPage() {
                 </Button>
               </div>
 
+              <p className="mt-4 text-center text-sm text-muted-foreground">
+                Inquiries are typically acknowledged within one business day.
+                Initial conversations are confidential and carry no obligation.
+              </p>
+
               <div className="mt-8">
                 <p className="text-sm text-muted-foreground">
                   <span className="font-medium text-foreground">Email:</span>{" "}

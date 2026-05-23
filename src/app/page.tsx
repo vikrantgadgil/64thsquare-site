@@ -1,63 +1,9 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/section-heading";
-import { ServiceCard } from "@/components/service-card";
 import { CredibilityStrip } from "@/components/credibility-strip";
 import { CTASection } from "@/components/cta-section";
 import Image from "next/image";
-
-const services = [
-  {
-    title: "Fractional CIO Advisory",
-    description:
-      "Senior CIO-level technology leadership on a flexible, part-time basis. Ideal for organizations that need experienced technology direction without a full-time executive commitment.",
-  },
-  {
-    title: "Fractional CISO Advisory",
-    description:
-      "Cybersecurity leadership and risk management guidance. Build security programs, improve maturity, and meet compliance requirements with practical, business-aligned approaches.",
-  },
-  {
-    title: "Technology Transformation",
-    description:
-      "End-to-end transformation planning and execution support. From strategy through delivery, with a focus on outcomes, governance, and organizational alignment.",
-  },
-  {
-    title: "Program Recovery & Execution",
-    description:
-      "Restoring momentum to troubled technology programs. Rapid assessment, stabilization, and disciplined execution to bring initiatives back on track.",
-  },
-  {
-    title: "Cybersecurity & Compliance",
-    description:
-      "Risk assessment, compliance readiness, and security program development. Practical approaches to reducing exposure without unnecessary complexity or tool sprawl.",
-  },
-  {
-    title: "AI-Enabled Transformation",
-    description:
-      "Practical advisory for identifying and implementing AI-enabled use cases that improve productivity, decision-making, risk management, and business execution.",
-  },
-];
-
-const whereWeHelp = [
-  "You need senior technology leadership but not a permanent executive hire.",
-  "A critical program is late, unclear, or losing executive confidence.",
-  "Cybersecurity risk is visible, but priorities and ownership are unclear.",
-  "Cloud, infrastructure, or application modernization needs stronger direction.",
-  "A technology operating model needs restructuring for scale.",
-  "Compliance, audit, or governance readiness demands experienced oversight.",
-  "An acquisition or divestiture requires technology due diligence.",
-  "The board or investors need an independent technology assessment.",
-];
-
-const experience = [
-  "Senior technology leadership across complex enterprise environments",
-  "Cybersecurity, infrastructure, cloud, and transformation leadership",
-  "Experience with regulated and operationally intensive businesses",
-  "Large program recovery and execution discipline",
-  "Practical operator experience, not just advisory theory",
-];
 
 export default function Home() {
   return (
@@ -89,8 +35,8 @@ export default function Home() {
 
             {/* Supporting line */}
             <p className="mx-auto mt-5 max-w-xl text-sm font-medium text-blue-gray lg:mx-0">
-              Fractional CIO/CISO &middot; Program Recovery &middot;
-              Cybersecurity &middot; AI-Enabled Transformation
+              Fractional CIO &middot; Cybersecurity Advisory &middot;
+              Program Recovery &middot; AI-Enabled Transformation
             </p>
 
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
@@ -132,40 +78,6 @@ export default function Home() {
       {/* ── Credibility Strip ── */}
       <CredibilityStrip />
 
-      {/* ── What We Do ── */}
-      <section className="bg-ivory">
-        <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-          <SectionHeading
-            eyebrow="What we do"
-            title="Clarity, structure, and execution discipline"
-            description="64thSquare helps organizations bring clarity, structure, and execution discipline to complex technology work. We bridge the gap between strategy and delivery — providing the senior judgment, practical experience, and focused leadership that technology initiatives require."
-          />
-        </div>
-      </section>
-
-      {/* ── Services ── */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-          <SectionHeading
-            eyebrow="Services"
-            title="Advisory and leadership when you need it"
-            description="Engagement models designed for organizations that need experienced technology direction — without adding permanent executive headcount."
-            className="mb-16"
-          />
-
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, i) => (
-              <ServiceCard
-                key={service.title}
-                title={service.title}
-                description={service.description}
-                index={i}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Where We Help ── */}
       <section className="bg-ivory">
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
@@ -206,24 +118,16 @@ export default function Home() {
               </h2>
               <div className="mt-6 space-y-4 text-sm leading-relaxed text-slate">
                 <p>
-                  64thSquare Advisory is led by Vikrant &ldquo;Vik&rdquo; Gadgil, a senior
-                  technology executive and advisor with more than 30 years of
-                  experience across CIO, CISO, enterprise transformation,
-                  cybersecurity, ERP, cloud, analytics, and program governance
-                  roles.
-                </p>
-                <p>
-                  Vik has led technology organizations in regulated utilities,
-                  manufacturing, logistics, eCommerce, healthcare, and consulting
-                  environments. He has advised executive teams and boards,
-                  delivered large-scale SAP and technology transformations, built
-                  cybersecurity and governance programs, and helped recover
-                  complex technology initiatives.
-                </p>
-                <p>
-                  He holds CISSP, CISM, PMP, and ITIL Foundation certifications,
-                  with an MBA from the Indian Institute of Management Calcutta and
-                  an Electrical Engineering degree from NIT Nagpur.
+                  Vik Gadgil is a senior technology executive and advisor with 30
+                  years of operating experience across CIO, CISO, and enterprise
+                  advisory roles. He spent nine years as CIO at Chesapeake
+                  Utilities, where he led a multi-year SAP S/4HANA implementation
+                  on the RISE platform — recognized with the SAP Mid-Sized
+                  Utilities Implementation Award — and maintained a zero-incident
+                  cybersecurity record throughout his tenure. He holds an MBA from
+                  IIM Calcutta and certifications including CISSP, CISM, and PMP.
+                  64thSquare brings that depth of operating experience directly to
+                  client engagements.
                 </p>
               </div>
             </div>
@@ -235,48 +139,23 @@ export default function Home() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "30+ years in senior technology leadership",
-                  "CIO and CISO experience",
-                  "CISSP &middot; CISM &middot; PMP &middot; ITIL Foundation",
-                  "SAP, cybersecurity, AI governance, cloud, analytics, and enterprise transformation",
-                  "Board, executive, and program-level advisory",
+                  "Nine years as CIO, Chesapeake Utilities",
+                  "SAP S/4HANA RISE implementation",
+                  "SAP Mid-Sized Utilities Implementation Award",
+                  "Zero-incident cybersecurity record",
+                  "CISSP &middot; CISM &middot; PMP",
+                  "MBA, IIM Calcutta",
                 ].map((item) => (
                   <li
                     key={item}
                     className="flex items-start gap-3 text-sm leading-relaxed text-slate"
                   >
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal" />
-                    <span dangerouslySetInnerHTML={{ __html: item }} />
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Why 64thSquare ── */}
-      <section className="border-y border-border/40 bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-          <SectionHeading
-            eyebrow="Why 64thSquare"
-            title="Senior operator experience applied to advisory work"
-            description="64thSquare brings senior operator experience to advisory work. The approach is practical, direct, and outcome-oriented. The focus is not on producing large strategy decks. The focus is helping leaders make decisions, align teams, reduce risk, and move important work forward."
-            className="mb-16"
-          />
-
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {experience.map((item) => (
-              <div
-                key={item}
-                className="rounded-xl border border-border/40 bg-ivory p-6 shadow-sm transition-all hover:shadow-md sm:p-8"
-              >
-                <div className="mb-4 h-px w-10 bg-teal" />
-                <p className="text-sm leading-relaxed text-slate">
-                  {item}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

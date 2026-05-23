@@ -44,23 +44,31 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
           <div className="mx-auto max-w-3xl">
             <p className="text-lg leading-relaxed text-muted-foreground">
-              64thSquare was founded on a straightforward premise: organizations
-              facing complex technology decisions deserve access to senior,
-              experienced leadership — without the overhead of a permanent
-              executive hire.
+              Vik Gadgil founded 64thSquare after 30 years in senior technology
+              leadership roles spanning regulated utilities, manufacturing,
+              logistics, eCommerce, and healthcare. His operating experience
+              includes serving as CIO at Chesapeake Utilities for nine years,
+              where he led the organization through a full SAP S/4HANA
+              implementation on the RISE platform — a program recognized with
+              the SAP Mid-Sized Utilities Implementation Award — while
+              maintaining a zero-incident cybersecurity record across his
+              tenure.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              We work with leadership teams, boards, and investors who need
-              practical, direct technology guidance. Our engagements range from
-              fractional CIO and CISO roles to targeted advisory on
-              transformation, cybersecurity, cloud strategy, and program
-              recovery.
+              Prior to Chesapeake, Vik held technology leadership roles at
+              organizations including Procter & Gamble, Ecolab, Vishay, and
+              Radial. He has served as a board advisor to Inixia LLC, a shared
+              services training firm founded by retired P&G executives,
+              where he co-developed a 50-hour Global Business Services
+              certification program delivered at Politecnico di Milano and major
+              corporations including Walmart.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              The work is grounded in real operating experience — not advisory
-              theory. We have led the organizations, managed the budgets, built
-              the teams, and delivered the programs. That experience shapes
-              every recommendation we make.
+              Vik holds an MBA from IIM Calcutta and a degree in Electrical
+              Engineering from NIT Nagpur. He holds CISSP, CISM, and PMP
+              certifications. 64thSquare was founded to make that caliber of
+              operating experience accessible to organizations that need it —
+              without the overhead of a permanent executive hire.
             </p>
           </div>
         </div>
@@ -75,17 +83,17 @@ export default function AboutPage() {
             className="mb-16"
           />
 
-          <div className="grid gap-8 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {approach.map((item) => (
               <div
                 key={item.title}
                 className="rounded-xl border border-border/40 bg-card p-8 shadow-sm transition-all hover:shadow-md"
               >
-                <div className="mb-4 h-px w-10 bg-gold" />
-                <h3 className="text-lg font-semibold text-foreground">
+                <div className="mb-4 h-1 w-10 rounded-full bg-teal" />
+                <h3 className="text-lg font-bold text-navy">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-3 text-sm leading-relaxed text-slate">
                   {item.description}
                 </p>
               </div>

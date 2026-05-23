@@ -14,14 +14,20 @@ const services = [
     ],
   },
   {
-    title: "Fractional CISO Advisory",
-    what: "Cybersecurity leadership and risk management guidance delivered on a schedule that fits your organization. We help build, improve, or validate security programs — with a practical, business-aware approach that avoids unnecessary complexity.",
-    where: "Organizations without dedicated security leadership. Companies responding to audit findings, compliance requirements, or security incidents. Firms preparing for regulatory examination or customer security reviews.",
+    title: "Cybersecurity Advisory & Compliance",
+    what: "64thSquare provides cybersecurity leadership in two modes depending on what the organization needs. For organizations without a dedicated security leader, we serve in a Fractional CISO capacity — providing ongoing program leadership, risk governance, and executive-level security direction. For organizations with a specific compliance, audit, or readiness challenge, we deliver targeted advisory — risk assessment, gap analysis, remediation planning, and compliance evidence preparation.",
+    where: [
+      "Organizations without dedicated security leadership needing ongoing program direction",
+      "Companies responding to audit findings, compliance requirements, or a security incident",
+      "Firms preparing for SOC 2, ISO 27001, PCI DSS, or regulatory examination",
+      "Boards and leadership teams needing an independent security posture assessment",
+    ],
     outcomes: [
-      "Risk-prioritized security program aligned to business tolerance",
-      "Improved security maturity without tool sprawl",
-      "Compliance readiness for relevant frameworks and regulations",
-      "Clear incident response and governance structures",
+      "Risk-prioritized security program aligned to actual business risk tolerance",
+      "Improved security maturity without tool sprawl or unnecessary spend",
+      "Compliance documentation and evidence readiness for relevant frameworks",
+      "Clear incident response structure and governance ownership",
+      "Independent assessment delivered to board or executive leadership",
     ],
   },
   {
@@ -44,17 +50,6 @@ const services = [
       "Stabilized delivery with clear accountability",
       "Restored stakeholder and team confidence",
       "Disciplined execution through to completion",
-    ],
-  },
-  {
-    title: "Cybersecurity & Compliance",
-    what: "Risk assessment, compliance readiness, and security program development. We help organizations understand their exposure, prioritize remediation, and build sustainable security practices — without over-investing in tools or process for their risk profile.",
-    where: "Companies preparing for SOC 2, ISO 27001, PCI DSS, or regulatory examination. Organizations that have received audit findings or security assessment gaps. Firms needing to demonstrate security posture to customers or partners.",
-    outcomes: [
-      "Clear understanding of risk exposure and priorities",
-      "Practical remediation plans that respect operational constraints",
-      "Compliance documentation and evidence readiness",
-      "Sustainable security operations integrated with existing teams",
     ],
   },
   {
@@ -119,9 +114,23 @@ export default function ServicesPage() {
                     <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-gold">
                       Where it helps
                     </h3>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      {service.where}
-                    </p>
+                    {Array.isArray(service.where) ? (
+                      <ul className="space-y-2">
+                        {service.where.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground"
+                          >
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-sm leading-relaxed text-muted-foreground">
+                        {service.where}
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -146,6 +155,69 @@ export default function ServicesPage() {
           </div>
         </section>
       ))}
+
+      {/* ── Engagement Model ── */}
+      <section className="bg-muted/30">
+        <div className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
+          <div className="mx-auto max-w-3xl">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-gold">
+              How we engage
+            </p>
+            <h2 className="text-balance text-2xl font-bold leading-tight text-foreground sm:text-3xl">
+              Flexible by design
+            </h2>
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              64thSquare engages on a retainer or project basis depending on the
+              nature and duration of the work.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2">
+            <div className="rounded-xl border border-border/40 bg-card p-8 shadow-sm">
+              <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-gold">
+                Retainer
+              </h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Retainer engagements are suited to fractional CIO or CISO roles,
+                ongoing advisory relationships, and programs requiring sustained
+                senior involvement over multiple months. Retainer terms are
+                structured around specific time commitments and defined outcomes
+                — not open-ended hour banks.
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-border/40 bg-card p-8 shadow-sm">
+              <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-gold">
+                Project
+              </h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Project engagements are suited to bounded advisory work: program
+                health assessments, cybersecurity gap analyses, technology due
+                diligence, transformation roadmaps, and similar defined-scope
+                deliverables with a clear beginning and end.
+              </p>
+            </div>
+          </div>
+
+          <div className="mx-auto mt-12 max-w-3xl text-center">
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              All engagements begin with a no-commitment conversation to
+              establish fit, scope, and approach. If 64thSquare is not the right
+              resource for a given situation, we will say so.
+            </p>
+            <div className="mt-8">
+              <a
+                href="mailto:contact@64thsquare.com?subject=64thSquare%20Consulting%20Inquiry"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-navy px-8 text-sm font-medium text-ivory shadow-sm transition-colors hover:bg-navy/90"
+              >
+                Schedule a conversation
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <CTASection variant="dark" />
     </>
