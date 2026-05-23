@@ -39,7 +39,7 @@ export function Header() {
               key={link.label}
               href={link.href}
               className={cn(
-                "text-base font-medium transition-colors",
+                "text-lg font-semibold transition-colors",
                 pathname === link.href
                   ? "text-navy"
                   : "text-slate hover:text-navy",

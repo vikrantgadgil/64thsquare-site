@@ -23,7 +23,8 @@ export default function Home() {
               Technology Advisory
             </p>
             <h1 className="text-balance text-3xl font-bold leading-tight tracking-tight text-navy sm:text-4xl md:text-5xl lg:text-5xl">
-              Strategy. Security.{" "}
+              Strategy.{" "}
+              <span className="text-slate">Security.</span>{" "}
               <span className="text-teal">Execution.</span>
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-pretty text-base leading-relaxed text-slate sm:text-lg lg:mx-0">
