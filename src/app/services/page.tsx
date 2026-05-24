@@ -70,7 +70,7 @@ export default function ServicesPage() {
     <>
       {/* Header */}
       <section className="border-b border-ivory/10 bg-navy">
-        <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-12 sm:py-16">
           <SectionHeading
             eyebrow="Services"
             title="Advisory and leadership for critical technology work"
