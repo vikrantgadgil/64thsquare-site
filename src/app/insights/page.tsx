@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
 import { CTASection } from "@/components/cta-section";
@@ -8,7 +8,7 @@ const publishedArticles = [
   {
     title: "When a Fractional CIO or CISO Makes Sense",
     description:
-      "Not every organization needs a full-time technology executive. Here are the signals that point toward a fractional model — and how to structure the engagement.",
+      "Not every organization needs a full-time technology executive. Here are the signals that point toward a fractional model, and how to structure the engagement.",
     href: "/insights/when-fractional-cio-ciso-makes-sense",
   },
 ];
@@ -22,7 +22,7 @@ export default function InsightsPage() {
           <SectionHeading
             eyebrow="Insights"
             title="Perspectives on technology leadership and advisory"
-            description="Practical thinking on the topics that matter to senior technology leaders — fractional leadership, program execution, cybersecurity, and transformation."
+            description="Practical thinking on the topics that matter to senior technology leaders, fractional leadership, program execution, cybersecurity, and transformation."
             className="text-ivory [&_h2]:text-ivory [&_p]:text-ivory/60"
           />
         </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "64thSquare — Strategy. Security. Execution.",
+  title: "64thSquare, Strategy. Security. Execution.",
   description:
     "64thSquare provides fractional CIO, CISO, and technology transformation advisory services for organizations that need senior technology leadership without adding permanent executive headcount.",
 };

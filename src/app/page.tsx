@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/section-heading";
 import { CredibilityStrip } from "@/components/credibility-strip";
@@ -36,8 +36,8 @@ export default function Home() {
 
             {/* Supporting line */}
             <p className="mx-auto mt-5 max-w-xl text-sm font-medium text-blue-gray lg:mx-0">
-              Fractional CIO &middot; Cybersecurity Advisory &middot;
-              Program Recovery &middot; AI-Enabled Transformation
+              Fractional CIO · Cybersecurity Advisory ·
+              Program Recovery · AI-Enabled Transformation
             </p>
 
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
@@ -98,6 +98,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 className="h-auto w-full max-w-[500px] rounded-xl"
+                style={{ height: "auto" }}
                 priority
               />
             </div>
@@ -123,8 +124,8 @@ export default function Home() {
                   years of operating experience across CIO, CISO, and enterprise
                   advisory roles. He spent nine years as CIO at Chesapeake
                   Utilities, where he led a multi-year SAP S/4HANA implementation
-                  on the RISE platform — recognized with the SAP Mid-Sized
-                  Utilities Implementation Award — and maintained a zero-incident
+                  on the RISE platform, recognized with the SAP Mid-Sized
+                  Utilities Implementation Award, and maintained a zero-incident
                   cybersecurity record throughout his tenure. He holds an MBA from
                   IIM Calcutta and certifications including CISSP, CISM, and PMP.
                   64thSquare brings that depth of operating experience directly to
@@ -140,12 +141,12 @@ export default function Home() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Nine years as CIO, Chesapeake Utilities",
+                  "Ten years as CIO of a publicly listed energy utility",
                   "SAP S/4HANA RISE implementation",
                   "SAP Mid-Sized Utilities Implementation Award",
                   "Zero-incident cybersecurity record",
-                  "CISSP &middot; CISM &middot; PMP",
-                  "MBA, IIM Calcutta",
+                  "Multi-industry experience: Utilities, Healthcare, Manufacturing, Consumer Goods",
+                  "Active CISSP · CISM | NERC CIP compliance | SolarWinds & CrowdStrike incident response",
                 ].map((item) => (
                   <li
                     key={item}

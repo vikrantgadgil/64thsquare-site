@@ -1,11 +1,11 @@
-import { SectionHeading } from "@/components/section-heading";
+﻿import { SectionHeading } from "@/components/section-heading";
 import { CTASection } from "@/components/cta-section";
 
 const approach = [
   {
     title: "Operator experience",
     description:
-      "Decades of senior technology leadership across complex enterprise environments. We have held the roles we advise on — and understand the realities of leading technology organizations.",
+      "Decades of senior technology leadership across complex enterprise environments. We have held the roles we advise on, and understand the realities of leading technology organizations.",
   },
   {
     title: "Practical delivery",
@@ -20,7 +20,7 @@ const approach = [
   {
     title: "Independent judgment",
     description:
-      "No product affiliations, no vendor bias, no agenda beyond helping clients succeed. We provide honest, direct assessments and recommendations — even when the message is difficult.",
+      "No product affiliations, no vendor bias, no agenda beyond helping clients succeed. We provide honest, direct assessments and recommendations, even when the message is difficult.",
   },
 ];
 
@@ -47,28 +47,25 @@ export default function AboutPage() {
               Vik Gadgil founded 64thSquare after 30 years in senior technology
               leadership roles spanning regulated utilities, manufacturing,
               logistics, eCommerce, and healthcare. His operating experience
-              includes serving as CIO at Chesapeake Utilities for nine years,
+              includes serving as CIO at Chesapeake Utilities for ten years,
               where he led the organization through a full SAP S/4HANA
-              implementation on the RISE platform — a program recognized with
-              the SAP Mid-Sized Utilities Implementation Award — while
+              implementation on the RISE platform, a program recognized with
+              the SAP Mid-Sized Utilities Implementation Award, while
               maintaining a zero-incident cybersecurity record across his
               tenure.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Prior to Chesapeake, Vik held technology leadership roles at
-              organizations including Procter & Gamble, Ecolab, Vishay, and
-              Radial. He has served as a board advisor to Inixia LLC, a shared
-              services training firm founded by retired P&G executives,
-              where he co-developed a 50-hour Global Business Services
-              certification program delivered at Politecnico di Milano and major
-              corporations including Walmart.
+              organizations including Procter & Gamble, Ecolab, and Vishay.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              As CIO and CISO at Chesapeake Utilities, Vik owned the cybersecurity program for a NERC CIP-regulated utility, building and maintaining compliance across NIST, ISO 27001, and PCI-DSS frameworks while sustaining a zero-incident security record throughout his tenure. He led the organizational response to two major industry-wide events: the SolarWinds supply chain compromise and the CrowdStrike global outage, both of which required rapid executive decision-making, vendor coordination, and board-level communication under pressure.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Vik holds an MBA from IIM Calcutta and a degree in Electrical
               Engineering from NIT Nagpur. He holds CISSP, CISM, and PMP
               certifications. 64thSquare was founded to make that caliber of
-              operating experience accessible to organizations that need it —
-              without the overhead of a permanent executive hire.
+              operating experience accessible to organizations that need it, without the overhead of a permanent executive hire.
             </p>
           </div>
         </div>

@@ -1,10 +1,10 @@
-import { SectionHeading } from "@/components/section-heading";
+﻿import { SectionHeading } from "@/components/section-heading";
 import { CTASection } from "@/components/cta-section";
 
 const services = [
   {
     title: "Fractional CIO Advisory",
-    what: "Senior CIO-level technology leadership on a flexible, part-time or interim basis. We step in as your technology executive — providing direction, governance, team leadership, and strategic planning without the overhead of a full-time hire.",
+    what: "Senior CIO-level technology leadership on a flexible, part-time or interim basis. We step in as your technology executive, providing direction, governance, team leadership, and strategic planning without the overhead of a full-time hire.",
     where: "Organizations that have outgrown basic IT support but are not ready for a full-time CIO. Companies navigating growth, transition, or leadership gaps. Boards and investors needing independent technology assessment.",
     outcomes: [
       "Clear technology strategy aligned to business objectives",
@@ -15,7 +15,7 @@ const services = [
   },
   {
     title: "Cybersecurity Advisory & Compliance",
-    what: "64thSquare provides cybersecurity leadership in two modes depending on what the organization needs. For organizations without a dedicated security leader, we serve in a Fractional CISO capacity — providing ongoing program leadership, risk governance, and executive-level security direction. For organizations with a specific compliance, audit, or readiness challenge, we deliver targeted advisory — risk assessment, gap analysis, remediation planning, and compliance evidence preparation.",
+    what: "64thSquare provides cybersecurity leadership in two modes depending on what the organization needs. For organizations without a dedicated security leader, we serve in a Fractional CISO capacity, providing ongoing program leadership, risk governance, and executive-level security direction. For organizations with a specific compliance, audit, or readiness challenge, we deliver targeted advisory, risk assessment, gap analysis, remediation planning, and compliance evidence preparation.",
     where: [
       "Organizations without dedicated security leadership needing ongoing program direction",
       "Companies responding to audit findings, compliance requirements, or a security incident",
@@ -32,8 +32,8 @@ const services = [
   },
   {
     title: "Technology Transformation",
-    what: "End-to-end transformation planning and execution support. From assessing current state and defining target architecture through building roadmaps and guiding delivery — with a focus on outcomes, governance, and organizational readiness.",
-    where: "Organizations undertaking significant technology change — cloud migration, ERP modernization, digital platform builds, or operating model redesign. Companies that need experienced direction to avoid common transformation pitfalls.",
+    what: "End-to-end transformation planning and execution support. From assessing current state and defining target architecture through building roadmaps and guiding delivery, with a focus on outcomes, governance, and organizational readiness.",
+    where: "Organizations undertaking significant technology change, cloud migration, ERP modernization, digital platform builds, or operating model redesign. Companies that need experienced direction to avoid common transformation pitfalls.",
     outcomes: [
       "Realistic, sequenced transformation roadmap",
       "Governance structures that maintain momentum",
@@ -74,7 +74,7 @@ export default function ServicesPage() {
           <SectionHeading
             eyebrow="Services"
             title="Advisory and leadership for critical technology work"
-            description="Engagement models designed for organizations that need experienced technology direction — without adding permanent executive headcount."
+            description="Engagement models designed for organizations that need experienced technology direction, without adding permanent executive headcount."
             className="text-ivory [&_h2]:text-ivory [&_p]:text-ivory/60"
           />
         </div>
@@ -181,8 +181,7 @@ export default function ServicesPage() {
                 Retainer engagements are suited to fractional CIO or CISO roles,
                 ongoing advisory relationships, and programs requiring sustained
                 senior involvement over multiple months. Retainer terms are
-                structured around specific time commitments and defined outcomes
-                — not open-ended hour banks.
+                structured around specific time commitments and defined outcomes, not open-ended hour banks.
               </p>
             </div>
 

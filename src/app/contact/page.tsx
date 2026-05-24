@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+﻿import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/section-heading";
 import { CTASection } from "@/components/cta-section";
 
@@ -20,7 +20,7 @@ export default function ContactPage() {
           <SectionHeading
             eyebrow="Contact"
             title="Start the conversation"
-            description="Whether you need interim technology leadership, advisory support for a specific initiative, or an independent perspective on a complex challenge — we would welcome the opportunity to discuss how we might help."
+            description="Whether you need interim technology leadership, advisory support for a specific initiative, or an independent perspective on a complex challenge, we would welcome the opportunity to discuss how we might help."
             className="text-ivory [&_h2]:text-ivory [&_p]:text-ivory/60"
           />
         </div>
