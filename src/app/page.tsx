@@ -40,6 +40,13 @@ export default function Home() {
               Program Recovery · AI-Enabled Transformation
             </p>
 
+            {/* Location badge */}
+            <div className="mx-auto mt-5 inline-flex items-center gap-1.5 rounded-full border border-teal/30 bg-white px-5 py-2 shadow-sm lg:mx-0">
+              <span className="text-sm font-semibold text-navy md:text-base">
+                Philadelphia-based. Serving organizations across the United States.
+              </span>
+            </div>
+
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
               <Button asChild size="lg">
                 <a

@@ -20,8 +20,17 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-ivory/95 backdrop-blur supports-[backdrop-filter]:bg-ivory/60">
-      <div className="mx-auto flex h-20 items-center justify-between px-6 lg:max-w-6xl">
+    <header className="sticky top-0 z-50 w-full bg-ivory/95 backdrop-blur supports-[backdrop-filter]:bg-ivory/60">
+      {/* Sitewide location bar */}
+      <div className="border-b border-border/20 bg-navy/[0.04]">
+        <div className="mx-auto flex h-9 items-center justify-center px-6 lg:max-w-6xl">
+          <p className="text-sm font-semibold tracking-wide text-navy md:text-base">
+            Philadelphia-based. Serving organizations across the United States.
+          </p>
+        </div>
+      </div>
+      <div className="border-b border-border/40">
+        <div className="mx-auto flex h-20 items-center justify-between px-6 lg:max-w-6xl">
         <Link href="/" className="flex shrink-0 items-center">
           <Image
             src="/64thsquare-logo.svg"
@@ -73,6 +82,7 @@ export function Header() {
             <Menu className="h-5 w-5" aria-hidden="true" />
           )}
         </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
