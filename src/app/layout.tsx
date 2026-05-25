@@ -15,9 +15,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "64thSquare, Strategy. Security. Execution.",
+  metadataBase: new URL("https://64thsquare.com"),
+  title: "64thSquare | Senior Technology Advisory",
   description:
-    "64thSquare provides fractional CIO, CISO, and technology transformation advisory services for organizations that need senior technology leadership without adding permanent executive headcount.",
+    "Fractional CIO, CISO, cybersecurity, technology transformation, and program recovery advisory services.",
+  openGraph: {
+    title: "64thSquare | Senior Technology Advisory",
+    description:
+      "Fractional CIO, CISO, cybersecurity, technology transformation, and program recovery advisory services.",
+    url: "https://64thsquare.com",
+    siteName: "64thSquare",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "64thSquare senior technology advisory",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "64thSquare | Senior Technology Advisory",
+    description:
+      "Fractional CIO, CISO, cybersecurity, technology transformation, and program recovery advisory services.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
